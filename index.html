@@ -10,12 +10,10 @@
 </head>
 
 <body>
-<!--  test    -->
-<!--     <audio autoplay="autoplay" loop="loop" src="./sinhnhat.mp3">
+    <!-- <audio autoplay="autoplay" loop="loop" src="sinhnhat.mp3">
     </audio> -->
-    <audio autoplay="autoplay" loop="loop">
-        <source src="./sinhnhat.mp3" type="audio/mpeg">
-    </audio>
+    <audio id="audioID" loop>
+        <source src="sinhnhat.mp3" type="audio/mp3"></audio>
     <canvas id="birthday"></canvas>
     <div class="confetti">
         <div class="squareOne"></div>
@@ -28,7 +26,7 @@
         <div class="squareEight"></div>
         <div class="squareNine"></div>
         <div class="squareTen"></div>
-      </div>
+    </div>
     <div class="card">
         <div class="imgBox">
             <div class="bark"></div>
@@ -37,8 +35,7 @@
         <div class="details">
             <!-- <h4 class="color1">You're not a Fossil! (YET)</h2> -->
             <h4 class="color2 margin">HAPPY BIRTHDAY</h3>
-                <p>Êu cu <3 </p>
-                <p>Năm tháng sau này,</p>
+                <p>Êu cu <3 </p> <p>Năm tháng sau này,</p>
                 <p>luôn bình an vui vẻ</p>
                 <p>tìm được lối đi riêng</p>
                 <p>Mãi bên nhau bạn nhé</p>
@@ -58,7 +55,12 @@
         <div class="squareEight"></div>
         <div class="squareNine"></div>
         <div class="squareTen"></div>
-      </div>
+    </div>
+
+    <script>
+        var myaudio = document.getElementById("audioID").autoplay = true;
+    </script>
+
     <script src="./app.js"></script>
 </body>
 
